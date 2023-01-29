@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest/globals": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "eslint-plugin-react", "react-hooks", "jest"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "error",
+    "no-unused-vars": "warn",
+    "react/prop-types": "off" // TODO ENABLE THIS, once props types is done
+  }
+}
